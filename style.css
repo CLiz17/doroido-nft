@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 5px;
+    align-items: center;
+    background-color: black;
+}
+
+.logo {
+    padding-left: 2%;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li i {
+    padding-right: 15px;
+}
+
+header {
+
+    background-color: #ff0000;
+}
+
+.header-content {
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.header-content button {
+    padding: 15px 35px;
+    margin-top: 2%;
+    margin-bottom: 1.5%;
+    background-color: black;
+    color: white;
+    font-size: small;
+    border-color: transparent;
+}
+
+h4 {
+    line-height: 3;
+}
+
+.header-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-text {
+    flex: 50%;
+}
+
+.image {
+    flex: 50%;
+}
+
+@media (max-width: 800px) {
+
+    .left-text,
+    .image {
+        flex: 100%;
+    }
+
+}
+
+.theme {
+    background-color: rgb(27, 27, 27);
+    padding: 3%;
+    text-align: center;
+    color: white;
+}
+
+@font-face {
+    font-family: engraver;
+    src: url(font/EngraversGothicBT.ttf);
+}
+
+.theme h1 {
+    font-size: 35px;
+    margin-bottom: 1%;
+}
+
+.theme p {
+    font-family: engraver;
+    font-size: 25px;
+}
+
+.gallery {
+    background-color: rgb(27, 27, 27);
+}
+
+.gallery ul {
+    display: flex;
+    flex-grow: 1;
+}
+
+.gallery ul li {
+    width: 33.333%;
+    height: auto;
+}
+
+.roadmap {
+    background-color: white;
+    padding: 5%
+}
+
+.roadmap h1 {
+    text-align: center;
+    font-size: 35px;
+    font: bolder;
+    margin: 50px;
+}
+
+.roadmap ul {
+    display: flex;
+    flex-grow: 1;
+}
+
+.roadmap ul li {
+    width: 33.333%;
+    height: auto;
+
+}
+
+.roadmap h2 {
+    color: white;
+    font-weight: bolder;
+    font-size: 15px;
+    text-align: center;
+    padding: 28px;
+}
+
+.rectangle {
+    height: 70px;
+    width: 300px;
+    background-color: black;
+    margin-top: 2%;
+    margin-bottom: 1.5%;
+}
+
+.meet {
+    background-color: rgb(27, 27, 27);
+    color: white;
+    padding: 5%;
+}
+
+.members {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3%;
+}
+
+.meet h2 {
+    text-align: center;
+}
+
+.members>div {
+    width: 33.333%;
+    height: auto;
+}
+
+.mem-data {
+    background-color: black;
+    width: 50%;
+    height: auto;
+}
+
+.meet h4 {
+    text-align: center;
+}
+
+.meet img {
+    width: 50%;
+    height: auto;
+}
+
+@font-face {
+    font-family: blackoakstd;
+    src: url(font/BlackoakStd.otf);
+}
+
+.meet h1 {
+    font-family: blackoakstd;
+    text-align: center;
+    line-height: 1.5;
+}
