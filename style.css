@@ -91,32 +91,54 @@ h4 {
     font-size: 25px;
 }
 
+.theme video {
+    padding-top: 5%;
+    width: 120vh;
+    height: auto;
+}
+
 @media (max-width: 800px) {
 
     .theme h1,
     p {
         padding: 3%;
     }
+
+    .theme video {
+        width: 44vh;
+        height: auto;
+        padding-top: 5%;
+    }
 }
 
 
 .gallery {
     background-color: rgb(27, 27, 27);
+    display: grid;
+    height: 130vh;
+    grid-template-columns: 1.3333fr 1.33333fr 1.33333fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
 }
 
-.gallery ul {
-    display: flex;
-    flex-grow: 1;
+@media (max-width: 800px) {
+    .gallery {
+        background-color: rgb(27, 27, 27);
+        display: grid;
+        height: 280vh;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .gallery img {
+        width: 100vw;
+    }
 }
 
-.gallery ul li {
-    width: 33.333%;
-    height: auto;
-}
 
 .roadmap {
     background-color: white;
-    padding: 5%
+    padding: 5%;
 }
 
 .roadmap h1 {
@@ -124,17 +146,6 @@ h4 {
     font-size: 35px;
     font: bolder;
     margin: 50px;
-}
-
-.roadmap ul {
-    display: flex;
-    flex-grow: 1;
-}
-
-.roadmap ul li {
-    width: 33.333%;
-    height: auto;
-
 }
 
 .roadmap h2 {
@@ -145,12 +156,25 @@ h4 {
     padding: 28px;
 }
 
+.blocks {
+    display: grid;
+    height: 30vh;
+    grid-template-columns: 1.3333fr 1.33333fr 1.33333fr;
+}
+
+@media (max-width: 800px) {
+    .blocks {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 1fr;
+    }
+}
+
 .rectangle {
+    margin: auto;
     height: 70px;
     width: 300px;
     background-color: black;
-    margin-top: 2%;
-    margin-bottom: 1.5%;
 }
 
 
@@ -186,6 +210,10 @@ h4 {
 }
 
 @media (max-width: 800px) {
+    .meet h2 {
+        font-size: xx-large;
+    }
+
     .members {
         text-align: center;
         display: grid;
