@@ -1,2 +1,1 @@
-# DOROIDOVERSE
-~ ntf website
+# DOROIDOVERSE NTF Website
