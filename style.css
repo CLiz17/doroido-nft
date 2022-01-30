@@ -56,6 +56,13 @@ header {
     border-color: transparent;
 }
 
+.header-content button a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Secular One',
+        sans-serif;
+}
+
 .header-content h4 {
     line-height: 3;
 }
@@ -138,38 +145,40 @@ h4 {
 .gallery {
     background-color: rgb(27, 27, 27);
     display: grid;
-    height: 120vh;
+    height: 100%;
     grid-template-columns: 1.333fr 1.3333fr 1.3333fr;
     gap: 0;
     grid-template-rows: 1fr 1fr;
-    text-align: center;
+    ss
 }
 
 .gallery div {
-    height: 60vh;
+    height: 70vh;
 }
 
 .gallery img {
-    height: 100%;
     width: 100%;
+    height: 100%;
 }
 
 @media (max-width: 800px) {
     .gallery {
         display: grid;
-        height: 360vh;
+        height: 100%;
         grid-template-columns: 1fr;
         gap: 0;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 
     .gallery div {
-        height: 60vh;
+        width: 100%;
+        height: auto;
     }
 
     .gallery img {
-        height: 100%;
+        height: auto;
         width: 100%;
+        display: block;
+
     }
 }
 
@@ -201,7 +210,7 @@ h4 {
 
 .blocks {
     display: grid;
-    height: 30vh;
+    height: 40vh;
     grid-template-columns: 1.3333fr 1.33333fr 1.33333fr;
 }
 
@@ -220,7 +229,7 @@ h4 {
 .rectangle {
     margin: auto;
     height: 70px;
-    width: 300px;
+    width: 350px;
     background-color: black;
 }
 
